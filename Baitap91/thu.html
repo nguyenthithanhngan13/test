@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  today: <input type="number" id="today">
+  <button onclick="myFunction()">OK</button>
+  <p id="kq"></p>
+  <script>
+    function myFunction() {
+      var thu = document.getElementById("today").value;
+      if (thu >= 1 && thu <= 7) {
+        if (thu == 1) {
+          day = "thứ 2";
+        }
+        else if (thu == 2) {
+          day = "thứ 3";
+        }
+        else if (thu == 3) {
+          day = "thứ 4";
+        }
+        else if (thu == 4) {
+          day = "thứ 5";
+        }
+        else if (thu == 5) {
+          day = "thứ 6";
+        }
+        else if (thu == 6) {
+          day = "thứ 7";
+        }
+        if (thu == 7) {
+          day = "chủ nhật";
+        }
+      } else {
+        day = "nhập từ 1 đến 7"
+      }
+      document.getElementById("kq").innerHTML = day;
+    }
+  </script>
+</body>
+
+</html>
